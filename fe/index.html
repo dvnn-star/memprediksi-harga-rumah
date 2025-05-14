@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("bg.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="gambar" >
+<div class="flex w-full">
+    <div class=" flex w-full mx-auto  text-white  border-t-emerald-900 mt-4 p-5  justify-center self-center">
+        <form id="predictionForm" >
+            <p class="text-2xl font-bold  text-shadow-blue-50 ">Bedrooms</p>
+            <input type="number" id="bedrooms" name="bedrooms" placeholder="Bedrooms" required class="border m-2 rounded-full p-2">
+            <p class="text-2xl font-bold  text-shadow-blue-50 ">Bathrooms</p>
+            <input type="number" id="bathrooms" name="bathrooms" placeholder="Bathrooms" required class="border m-2 rounded-full p-2">
+            <p class="text-2xl font-bold  text-shadow-blue-50 ">Luas Ruang Tamu(dalam foot)</p>
+            <input type="number" id="sqft_living" name="sqft_living" placeholder="Living Area (sqft)" required class="border m-2 rounded-full p-2">
+            <p class="text-2xl font-bold  text-shadow-blue-50 ">Luas tanah(dalam ft)</p>
+            <input type="number" id="sqft_lot" name="sqft_lot" placeholder="Lot Area (sqft)" required class="border m-2 rounded-full p-2">
+            <p class="text-2xl font-bold  text-shadow-blue-50 ">Lantai</p>
+            <input type="number" id="floors" name="floors" placeholder="Floors" required class="border m-2 rounded-full p-2">
+            <p class="text-2xl font-bold  text-shadow-blue-50 ">Jarak pemandangan laut(dalam ft)</p>
+            <input type="number" id="waterfront" name="waterfront" placeholder="Waterfront" required class="border m-2 rounded-full p-2">
+            <p class="text-2xl font-bold  text-shadow-blue-50 ">area di atas tanah dalam ft)</p>
+            <input type="number" id="sqft_above" name="sqft_above" placeholder="Above Ground Area (sqft)" required class="border m-2 rounded-full p-2">
+            <p class="text-2xl font-bold  text-shadow-blue-50 ">Area basement(ft)</p>
+            <input type="number" id="sqft_basement" name="sqft_basement" placeholder="Basement Area (sqft)" required class="border m-2 rounded-full p-2">
+            
+            <button type="submit" class="m-8 text-2xl font-bold border p-2 rounded-full ">Prediksi</button>
+        </form>
+    </div>
+</div>
+
+<div id="result" class=" flex border  text-white justify-center p-6 rounded-full">
+    <p class="pr-1.5    ">prediksi harga adalah </p>
+    <p id="predictionResult" ></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
