@@ -12,7 +12,7 @@ document.getElementById('predictionForm').addEventListener('submit', async funct
     };
 
     try {
-        const response = await fetch('https://daaa.hf.space/predict', {  // ← Ganti ke URL space kamu
+        const response = await fetch('https://Daaa.hf.space/predict', {  // ← Ganti ke URL space kamu
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
